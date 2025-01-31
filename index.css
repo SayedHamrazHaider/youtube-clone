@@ -1,0 +1,81 @@
+body {
+    margin-top: 60px; 
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar input {
+    border-radius: 20px 0px 0px 20px;
+    cursor: pointer;
+}
+
+.navbar button{
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 0px;
+    border: 1px solid gray;
+}
+
+.filter-buttons {
+    margin-left: 250px;
+    display: flex;
+    margin-top: 100px;
+    position: sticky;
+    top: 1px;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background: white;
+}
+
+.filter-buttons button {
+    border-radius: 20px;
+}
+
+.sidebar {
+    overflow-y: scroll;
+    height: 100vh;
+    position: fixed;
+    top: 86px;
+    width: 200px;
+    padding-top: 10px;
+}
+
+.sidebar .nav-link {
+    font-size: 1rem;
+    color: #333;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.content {
+    margin-left: 270px;
+    padding-left: 0px;
+    overflow-y: auto;
+    column-gap: 50px;
+    margin-top: 50px;
+}
+.categories {
+    /* overflow-x: auto; */
+    white-space: nowrap;
+}
+.categories button {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.video-card iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+.video-card {
+    /* margin-bottom: 20px; */
+    column-gap: 50px;
+    width: 300px;
+    /* height: 200px; */
+}

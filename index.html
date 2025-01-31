@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- bootstrip cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- css link -->
+     <link rel="stylesheet" href="index.css">
+    
+    <title>Youtube-clone</title>
+</head>
+<body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container-fluid">
+
+          <!-- Logo and menu -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="fas fa-bars me-3"></i>
+            <img src="https://www.freepnglogos.com/uploads/youtube-logo-hd-8.png" alt="YouTube Logo" width="100">
+            <p>Youtube<sup>PK</sup></p>
+          </a>
+
+          <!-- Search bar -->
+          <form class="d-flex flex-grow-1 mx-3">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+
+          <!-- Icons -->
+          <div>
+            <i class="fas fa-video mx-3"></i>
+            <i class="fas fa-bell mx-3"></i>
+            <i class="fas fa-user-circle mx-3"></i>
+          </div>
+        </div>
+      </nav>  
+
+          <!-- Filter Buttons -->
+    <div class="filter-buttons px-3">
+      <button class="btn btn-outline-secondary">All</button>
+      <button class="btn btn-outline-secondary">Music</button>
+      <button class="btn btn-outline-secondary">Pashto music</button>
+      <button class="btn btn-outline-secondary">Ghazal</button>
+      <button class="btn btn-outline-secondary">Majlis</button>
+      <button class="btn btn-outline-secondary">Noha</button>
+      <button class="btn btn-outline-secondary">Mixes</button>
+      <button class="btn btn-outline-secondary">Web Development</button>
+      <button class="btn btn-outline-secondary">Sitars</button>
+      <button class="btn btn-outline-secondary">Podcasts</button>
+  </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="container-fluid mt-4 d-flex justify-content-between">
+        <div class="row">
+
+            <!-- SIDEBAR -->
+            <div class="col-md-2 d-none d-md-block bg-light sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home"><i class="fas fa-home me-2"></i> Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="short"><img src="short-icon.png" alt="" width="20px" height="20px"> Shorts</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscrib"><i class="fas fa-play-circle me-2"></i> Subscriptions</a>
+                    </li>
+                    
+                    <hr>
+
+                    <h5>You ></h5>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="history"><i class="fas fa-history me-2"></i> History</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="playlist"><img src="playlist-icon.png" alt="playlist-icon" width="20px" height="20px"> Playlists</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="video-icon"><img src="video-icon.jpg" alt="video-icon" width="20px" height="20px"> Your videos</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="watch"><i class="fa-regular fa-clock"></i> Watch later</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="like"><i class="fa-regular fa-thumbs-up"></i> Liked videos</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="clips"><i class="fa-solid fa-scissors"></i> Your Clips</a>
+                    </li>
+
+                    <hr>
+
+                    <h5>Subscription</h5>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="Geo"><img src="Geo-News icon.webp" alt="" width="40px" height="40px"> Geo News</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="ary"><img src="ary news icon.png" alt="" width="40px" height="40px"> ARY News</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="ajj"><img src="ajj news.jpeg" alt="" width="40px" height="40px"> AJJ News</a>
+                    </li>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, quod?</p>
+
+                </ul>
+            </div>
+
+              <!-- Main Content -->
+              <div class="content">
+                <!-- Categories -->
+                <!-- <div class="categories d-flex mb-3">
+                    <button class="btn btn-light">All</button>
+                    <button class="btn btn-light">Music</button>
+                    <button class="btn btn-light">Pashto Music</button>
+                    <button class="btn btn-light">Ghazal</button>
+                    <button class="btn btn-light">Qasida</button>
+                    <button class="btn btn-light">Majlis</button>
+                    <button class="btn btn-light">Noha</button>
+                    <button class="btn btn-light">Mixes</button>
+                    <button class="btn btn-light">Web Development</button>
+                    <button class="btn btn-light">Sitars</button>
+                    <button class="btn btn-light">Podcasts</button>
+                </div> -->
+
+                <!-- Video Grid -->
+                <div class="row">
+                    <!-- Video 1 -->
+                    <div class="col-md-4">
+                        <div class="video-card">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Bnjbun-hiBk?si=USjF63vlkwpH-tpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h6>Data Structures and Algorithms</h6>
+                            <p>Jenny's Lectures CS IT • 1.5M views</p>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="col-md-4">
+                        <div class="video-card">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ajdRvxDWH4w?si=pvhS-2HcFgUZcg8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h6>Javascript Full tutorial</h6>
+                            <p>Apna Collage Live • 10M views</p>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="col-md-4">
+                        <div class="video-card">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DUiYVJIVNcA?si=Tl0e7qpuLJ9jAS8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h6>Bootstrip full course</h6>
+                            <p>Apna Collage • 48K views</p>
+                        </div>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="col-md-4">
+                        <div class="video-card">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/eHye3PxH4jU?si=a7ATkdqNoEEIBOc5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h6>Media Query in CSS</h6>
+                            <p>CodeWithHarry • 50M views</p>
+                        </div>
+                    </div>
+                    <!-- Video 5 -->
+                    <div class="col-md-4">
+                        <div class="video-card">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/X8BYu3dMKf0?si=-VEtBwz9aE0SDAnS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h6>Web Development roadmap</h6>
+                            <p>CodeWithHarry • 1M views</p>
+                        </div>
+                    </div>
+                    <!-- Video 6 -->
+                    <div class="col-md-4">
+                      <div class="video-card">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3NMXtItuwtU?si=76fr-eIl7Lj6ETIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          <h6>Master English in 90 Days</h6>
+                          <p>English Master • 30M views</p>
+                      </div>
+                  </div>
+                  <!-- Video 7 -->
+                  <div class="col-md-4">
+                    <div class="video-card">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/O3DPVlynUM0?si=uokjp0d8WNi4mRCJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h6>JEO LIVE</h6>
+                        <p>Jeo News Live• 100M views</p>
+                    </div>
+                  </div>
+                  <!-- Video 8 -->
+                  <div class="col-md-4">
+                    <div class="video-card">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/5_FLHvq4Wwg?si=QOGZymoh_rV_ukRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h6>Graphic Design Full Course</h6>
+                        <p>MS. Skill • 1M views</p>
+                    </div>
+                 </div>
+                 <!-- Video 9 -->
+                 <div class="col-md-4">
+                  <div class="video-card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/j3DsRK0IBfs?si=P-zFjOraRLVSCZ8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <h6>AI Courses for Beginner</h6>
+                      <p>Ishan Sharma • 1M views</p>
+                  </div>
+               </div>               
+                </div>
+            </div>
+          </div>
+       </div>      
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</html>
